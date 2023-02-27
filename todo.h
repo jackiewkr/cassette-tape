@@ -2,10 +2,11 @@
 #define __TODO_H
 
 /* If adding any new priorities, add between P_DEFAULT and P_DONE
- * or i_setPrio() will fail */
+ * or i_setPrio() will fail
+ * Priorities start at 1 as failed atoi() calls give 0 as output */
 enum Priority
 {
-        P_DEFAULT = 0,
+        P_DEFAULT = 1,
         P_PRIORITY,
         P_WORKING,
         P_SUBMITTED,

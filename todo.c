@@ -62,7 +62,7 @@ int i_getName( struct Item* i, char* buf )
         if ( buf != NULL )
                 free( buf );
 
-        memcpy( buf, i->name );
+        memcpy( buf, i->name, i->n_sz );
 
         return i->n_sz;
 }
